@@ -1,0 +1,22 @@
+Run the command
+composer install
+npm install
+npm run build
+cp .env.example .env
+php artisan key:generate
+
+
+php artisan migrate
+php artisan db:seed --class=UserSeeder
+php artisan serv
+
+Login
+Admin Acc
+name => admin
+email => admin@gmail.com
+password => abc
+
+Customer Acc
+name => customer
+email => customer@gmail.com
+password => abc
