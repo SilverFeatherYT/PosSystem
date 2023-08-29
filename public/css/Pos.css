@@ -1,0 +1,190 @@
+.card {
+    box-shadow: 0 2rem 3rem rgba(132, 189, 200, 0.18);
+    background: var(--light);
+    color: var(--dark);
+}
+.card:hover {
+    box-shadow: none;
+}
+
+.card-1 {
+    padding: 10px 20px;
+}
+
+.card-2 {
+    margin-top: 30px;
+    height: 650px;
+}
+
+.Barcode {
+    margin-bottom: 10px;
+}
+
+.function-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.searchBar {
+    width: 325px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light);
+    position: relative;
+    left: 5px;
+}
+.search {
+    border: none;
+    outline: none;
+    flex: 0.9;
+    background: transparent;
+    margin-left: 5px;
+    color: var(--dark);
+}
+
+.table-data {
+    box-shadow: none;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.table-data .order {
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 30vh;
+}
+.table-data table thead th {
+    position: sticky;
+    top: -25px;
+    background-color: var(--light);
+}
+
+.table-data .order table td:nth-child(2) {
+    max-width: 110px;
+}
+table td input {
+    color: var(--dark);
+}
+table thead {
+    text-align: center;
+}
+table tr {
+    font-size: 1rem;
+}
+.rowShowTotal {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+#showtotal,
+#receiveCash,
+#Cashback {
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bolder;
+    width: 120px;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 0fr));
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.select span {
+    font-size: 2em;
+}
+.select {
+    text-align: center;
+    padding-top: 10px;
+    background: var(--light);
+    color: var(--dark);
+    outline: 0.1rem solid #aba9a9;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 8px 4px 4px;
+    user-select: none;
+}
+.selectTitle:hover {
+    color: var(--blue);
+}
+
+.paginate {
+    margin-top: auto;
+}
+
+.productImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.line {
+    width: 90%;
+    margin-left: 30px;
+    border-top: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
+    border-radius: 0 !important;
+}
+.selectPayment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.selectPayment input {
+    width: 20px;
+    height: 20px;
+}
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    outline: none;
+    background-color: var(--light) !important;
+    color: var(--dark) !important;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span {
+    position: absolute;
+    margin-top: 10px;
+    left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--dark);
+    transition: 0.5s;
+}
+.inputBox.focus span {
+    color: var(--blue);
+    transform: translateX(10px) translateY(-5px);
+    font-size: 0.7em;
+    padding: 0 10px;
+    background: var(--light);
+    border-left: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+}
+
+.function {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.drawingBuffer {
+    display: none;
+}

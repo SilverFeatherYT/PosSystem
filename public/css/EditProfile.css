@@ -1,0 +1,107 @@
+.wrapper {
+    background: linear-gradient(45deg, #dedbd4, #b3cee3, #8dd0eb, #60c3ed);
+    width: 650px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+.boxtwo {
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: linear-gradient(45deg, #dedbd4, #b3cee3, #8dd0eb, #60c3ed);
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+    border: 0.1em solid #fff;
+}
+
+.leftbox a {
+    padding: 30px;
+    color: white !important;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.leftbox {
+    background: none !important;
+}
+.leftbox a:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.leftbox a:first-child {
+    margin-top: 7px;
+}
+
+.leftbox a.active {
+    color: black !important;
+}
+
+.rightbox {
+    width: 60%;
+    margin-left: 27%;
+    padding-top: 5px;
+}
+
+
+.tabShow {
+    transition: all 0.5s ease-in;
+    width: 50%;
+    position: absolute;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+
+h2 {
+    color: #777;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+
+button{
+    margin-top: 10px;
+}
+
+.redeem, .point {
+    display: none;
+    width: 65%;
+}
+
+table{
+    width: 100%;
+}
+thead {
+    border-bottom: 1px solid #656565;
+}
+
+thead th {
+    padding: 10px;
+}
+tbody tr{
+    height: 60px;
+}
+tbody td {
+    padding: 5px;
+    border-bottom: 1px solid #656565; 
+}
+
+

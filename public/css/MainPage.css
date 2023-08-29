@@ -1,0 +1,221 @@
+.date {
+    display: inline-block;
+    background: rgba(132, 189, 200, 0.18);
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+.date input[type="date"],
+.date select {
+    background: transparent;
+    color: var(--dark);
+    border: none;
+    outline: none;
+}
+option{
+    background: var(--light);
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+.insights a {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 2rem 3rem rgba(132, 189, 200, 0.18);
+    transition: all 300ms ease;
+}
+.insights a:hover {
+    box-shadow: none;
+}
+
+.insights a span {
+    background: #7380ec;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+.insights a.expenses span {
+    background: #ff7782;
+}
+.insights a.income span {
+    background: #41f1b6;
+}
+.insights a.customer span {
+    background: #56f4ff;
+}
+
+.insights a .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.insights .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.insights .progress .number {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+.insights small {
+    color: grey;
+}
+
+.card {
+    background-color: var(--light);
+    color: var(--dark) !important;
+}
+.recent-orders table {
+    background: var(--light);
+    color: var(--dark);
+    width: 100%;
+    border-radius: 2rem;
+    border-collapse: separate;
+    border-spacing: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 189, 200, 0.18);
+    transition: 0.5s ease;
+}
+
+.recent-orders table .hidden {
+    display: none;
+    transition: 0.3s ease;
+    animation: slideUp 1s ease;
+}
+.recent-orders table tr {
+    animation: slideDown 1s ease;
+}
+.recent-orders table:hover {
+    box-shadow: none;
+}
+
+.recent-orders table td {
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 189, 200, 0.18);
+    color: var(--dark);
+}
+
+.recent-orders tbody tr:last-child td {
+    border: none;
+}
+
+.recent-orders #show,
+.recent-updates #showUpdate {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 1rem;
+}
+
+h2 {
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+}
+.recent-updates table {
+    background: var(--light);
+    color: var(--dark);
+    width: 100%;
+    border-radius: 2rem;
+    border-collapse: separate;
+    border-spacing: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 189, 200, 0.18);
+    transition: 0.5s ease;
+}
+.recent-updates table .hidden {
+    display: none;
+    transition: 0.3s ease;
+    animation: slideUp 1s ease;
+}
+.recent-updates table tr {
+    animation: slideDown 1s ease;
+}
+.recent-updates table:hover {
+    box-shadow: none;
+}
+.recent-updates table td {
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 189, 200, 0.18);
+    color: var(--dark);
+}
+.recent-updates #show {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 1rem;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+@media (max-width: 870px) {
+    .sidebar .logo-details .logo_name {
+        font-size: 16px;
+    }
+    .insights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .insights {
+        grid-template-columns: 1fr;
+    }
+    .sidebar .logo-details .logo_name {
+        font-size: 15px;
+    }
+    section .content {
+        width: 125%;
+    }
+    .recent-orders table {
+        
+    }
+    .recent-orders table tr {
+        font-size: 10px;
+        width: 100%;
+    }
+}

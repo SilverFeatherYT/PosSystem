@@ -1,0 +1,150 @@
+.welcome-msg {
+    display: inline-block;
+    color: var(--dark);
+    margin: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.items {
+    width: 80%;
+    margin: 20px 30px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background: var(--light);
+}
+.items:hover {
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.16), 0 5px 9px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+.items img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.items h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    color: var(--dark);
+}
+.items p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+.items h6 {
+    font-size: 26px;
+    text-align: center;
+    color: var(--dark);
+    margin: 0;
+}
+
+.items button {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.modal-header{
+    background: var(--light);
+}
+
+.modal-header h1{
+    color: var(--dark);
+}
+
+.modal-body {
+    padding: 20px;
+    background: var(--light);
+}
+
+.modal-footer{
+    background: var(--light);
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: var(--dark);
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 60px;
+    height: 37px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    
+}
+
+
+
+.quantity-controls button {
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.quantity-controls button:hover {
+    background-color: #e9ecef;
+}
+
+.buy-1 {
+    background: #2183a2;
+}
+
+.buy-2 {
+    background: #3b3e6e;
+}
+
+.buy-3 {
+    background: #0b0b0b;
+}
+
+.buy-4 {
+    background: #ff9f43;
+}
+.buy-5 {
+    background: #cf3389;
+}
+
+@media (max-width: 1000px) {
+    .items {
+        width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .items {
+        width: 100%;
+    }
+}
